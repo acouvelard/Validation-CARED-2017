@@ -1,0 +1,182 @@
+body {
+  background: linear-gradient(to right,rgba(0,0,0,0.5) , rgba(0,0,0,0.5)), url("../img/background.jpg") fixed no-repeat;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  color: black;
+}
+/*
+  Travail sur le header - menu
+*/
+.navbar {
+  background-color: #aac4ed;
+  border: 0px;
+  box-shadow: 8px 8px 10px #253144;
+}
+.navbar-brand {
+  color: black !important;
+  font-size: 3.2em;
+}
+a {
+  color: black !important;
+  font-size: 1.3em;
+}
+button {
+  background-color: #aac4ed;
+  border-color: #aac4ed;
+  color: black;
+}
+#navMenu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #779cd6;
+  padding: 2vh 0;
+  border-top: 1px solid #4f6991;
+}
+/*
+  Travail sur le body
+*/
+.container {
+  padding: 2vh 0;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  min-height: 60vh;
+}
+.panel-default {
+  border: 0px;
+  width: 80vw;
+  box-shadow: 8px 8px 10px black;
+  margin-top: 4vh;
+}
+.panel {
+  background-color: #e8e8e8;
+}
+.panel-heading {
+  font-size: 25px;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2vh;
+  border-color: none;
+}
+/*
+  Travail sur la page Home
+*/
+#presentation {
+  display: flex;
+  flex-direction: column;
+  padding: 2vh 3vw;
+  align-items: center;
+}
+#presentation p{
+  padding-top: 2vh;
+  text-align: justify;
+  margin: 0 2vw;
+}
+/*
+  Travail sur la page Vitrine
+*/
+#instruments {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 3vw;
+}
+.instrument {
+  display: flex;
+  flex-direction: column;
+  padding: 0 2vw;
+}
+.instrument img {
+  width: auto;
+  height: 20vh;
+  border: 1px solid black;
+}
+.instrument p {
+  display: flex;
+  flex-direction: column;
+}
+/*
+  Travail sur la page Contact
+*/
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10vw;
+}
+#contact div{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 1vh 0;
+}
+#contact form{
+  width: 100%;
+}
+#contact input, textarea{
+  width: 50%;
+}
+#contact div:last-child input{
+  width: 100px;
+  background-color: #aac4ed;
+  border-color: #aac4ed;
+}
+#contact div:last-child {
+  justify-content: center;
+}
+/*
+  Travail sur la page Message
+*/
+#messages {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 10vw;
+}
+#messages p {
+  border-left: 2px solid #aac4ed;
+  padding-left: 2vw;
+  margin: 2vh 0;
+}
+/*
+  Travail sur le footer
+*/
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  background-color: #779cd6;
+  height: 7vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #4f6991;
+  font-size: 1.3em;
+  z-index: 200;
+}
+/*
+  Responsive
+*/
+@media screen and (max-width: 500px) {
+  #contact div{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #contact {
+    padding: 0 2vw;
+  }
+  #contact input, textarea{
+    width: 90%;
+  }
+  #instruments {
+    justify-content: center;
+  }
+}
