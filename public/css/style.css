@@ -21,9 +21,10 @@ a {
   font-size: 1.3em;
 }
 button {
-  background-color: #aac4ed;
-  border-color: #aac4ed;
-  color: black;
+  background-color: #aac4ed !important;
+  border: 2px outset #aac4ed !important;
+  color: black !important;
+  border-radius: 0 !important;
 }
 #navMenu {
   display: flex;
